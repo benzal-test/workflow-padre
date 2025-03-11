@@ -14,4 +14,4 @@ jobs:
     with:
       example_input: 'sebastian'
     secrets:
-      SOME_SECRET: ${{ secrets.SOME_SECRET }}
+      test-secret: ${{ secrets.SOME_SECRET }}

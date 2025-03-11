@@ -6,6 +6,9 @@ on:
       example_input:
         required: true
         type: string
+    secrets:
+      test-secret:
+        required: true
 
 jobs:
   example_job:
@@ -19,4 +22,4 @@ jobs:
         run: echo "The input value is ${{ inputs.example_input }}"
 
       - name: Use secret
-        run: echo "The secret value is ${{ secrets.SOME_SECRET }}"
+        run: echo "The secret value is ${{ secrets.test-secret }}"
