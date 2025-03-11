@@ -1,0 +1,21 @@
+name: Child Workflow
+
+on:
+  workflow_call:
+    inputs:
+      example_input:
+        required: true
+        type: string
+
+jobs:
+  example_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Print input
+        run: echo "The input value is ${{ inputs.example_input }}"
+
+      - name: Use secret
+        run: echo "The secret value is ${{ secrets.SOME_SECRET }}"

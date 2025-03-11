@@ -12,6 +12,6 @@ jobs:
   call-reusable-workflow:
     uses: ./.github/workflows/reusable-workflow.yaml
     with:
-      some-input: 'sebastian'
+      example_input: 'sebastian'
     secrets:
       SOME_SECRET: ${{ secrets.SOME_SECRET }}
