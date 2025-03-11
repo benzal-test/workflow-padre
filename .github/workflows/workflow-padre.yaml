@@ -10,7 +10,7 @@ on:
 
 jobs:
   call-reusable-workflow:
-    uses: ./.github/workflows/reusable-workflow.yaml
+    uses: ./.github/workflows/workflow-hijo.yaml
     with:
       example_input: 'sebastian'
     secrets:
