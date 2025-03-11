@@ -11,7 +11,7 @@ on:
 jobs:
   llamada-a-workflow-hijo:
     name: Call Child Workflow
-    uses: benzal-test/workflow-hijo/.github/workflows/workflow-hijo.yaml
+    uses: benzal-test/workflow-hijo/.github/workflows/workflow-hijo-fuera.yaml
     with:
       example_input: 'sebastian'
     secrets:
