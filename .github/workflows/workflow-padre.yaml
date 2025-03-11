@@ -9,7 +9,8 @@ on:
       - main
 
 jobs:
-  call-reusable-workflow:
+  llamada-a-workflow-hijo:
+    name: Call Child Workflow
     uses: ./.github/workflows/workflow-hijo.yaml
     with:
       example_input: 'sebastian'

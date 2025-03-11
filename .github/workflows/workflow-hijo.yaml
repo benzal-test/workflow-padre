@@ -11,7 +11,8 @@ on:
         required: true
 
 jobs:
-  example_job:
+  job-hijo:
+    name: Job Hijo
     runs-on: ubuntu-latest
     
     steps:
